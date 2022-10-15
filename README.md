@@ -7,7 +7,7 @@ This repo would be updated with each finished project.
 Here is the list of projects:-
 
 - [x] Color-Flipper
-- [ ] Simple-Counter
+- [x] Simple-Counter
 - [ ] Reviews/Quotes
 - [ ] NavBar
 - [ ] SideBar
