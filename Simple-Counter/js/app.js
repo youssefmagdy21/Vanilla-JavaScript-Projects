@@ -12,7 +12,7 @@ decrease.addEventListener("click", () => {
 reset.addEventListener("click", () => {
   counter = 0;
   count.innerHTML = counter;
-  checkCounter();
+  count.style.color = "#0d1321";
 });
 increase.addEventListener("click", () => {
   counter += 1;
