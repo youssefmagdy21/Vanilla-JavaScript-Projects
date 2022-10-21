@@ -37,9 +37,6 @@ const job = document.getElementById("job");
 const rightBtn = document.querySelector(".right-btn");
 const leftBtn = document.querySelector(".left-btn");
 const randomBtn = document.querySelector(".random-btn");
-const mobileRightBtn = document.querySelector(".mobile-right-btn");
-const mobileLeftBtn = document.querySelector(".mobile-left-btn");
-const mobileRandomBtn = document.querySelector(".mobile-random-btn");
 let currentReview = 0;
 /////////////////////////////////////////////
 function displayContent(id) {
@@ -74,6 +71,3 @@ displayContent(0);
 leftBtn.addEventListener("click", flipLeft);
 rightBtn.addEventListener("click", flipRight);
 randomBtn.addEventListener("click", displayRandomReview);
-mobileLeftBtn.addEventListener("click", flipLeft);
-mobileRightBtn.addEventListener("click", flipRight);
-mobileRandomBtn.addEventListener("click", displayRandomReview);

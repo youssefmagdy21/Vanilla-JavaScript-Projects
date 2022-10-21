@@ -259,33 +259,71 @@ body {
   font-size: 0.85rem;
   text-transform: capitalize;
 }
-.btn {
-  display: none;
-}
-/* mobile nav buttons */
-.mobile-nav {
-  gap: 1rem;
+.btn-container {
+  gap: 2rem;
   margin-top: 1rem;
 }
-.mobile-btn {
-  background-color: #fbf5f3;
+.slider-btn {
+  width: 2rem;
+  height: 2rem;
 }
-.mobile-slider-btn {
-  width: 30px;
-  height: 30px;
+.arrow-img {
+  width: 100%;
+  height: 100%;
 }
-.mobile-random-btn {
+.random-btn {
   padding: 0.75em 1em;
   border-radius: 0.625rem;
   font-size: 0.75rem;
   font-weight: bold;
   border: 1px solid #000411;
+  background-color: transparent;
   transition: background-color 0.3s, color 0.3s ease;
 }
-.mobile-random-btn:hover,
-.mobile-random-btn:active {
+.random-btn:hover,
+.random-btn:active {
   background-color: #000411;
   color: #fbf5f3;
+}
+.left-btn:hover {
+  animation: slide-left 1300ms linear infinite;
+}
+.right-btn:hover {
+  animation: slide-right 1300ms linear infinite;
+}
+@keyframes slide-left {
+  from {
+    translate: 0px;
+  }
+  25% {
+    translate: -10px;
+  }
+  50% {
+    translate: -20px;
+  }
+  75% {
+    translate: -10px;
+  }
+  to {
+    translate: 0px;
+  }
+}
+@keyframes slide-right {
+  from {
+    translate: 0px;
+  }
+  25% {
+    translate: 10px;
+  }
+  50% {
+    translate: 20px;
+  }
+  75% {
+    translate: 10px;
+  }
+  to {
+    translate: 0px;
+  }
 }
 /* ************** End Main Styles **************** */
 
@@ -324,42 +362,12 @@ body {
     width: 4.0625rem;
     margin-bottom: 1rem;
   }
-  .btn {
-    background-color: #fbf5f3;
-    border: 1px solid #000411;
-    transition: background-color 0.3s, color 0.3s ease;
-  }
-  .btn:hover,
-  .btn:active {
-    background-color: #000411;
-    color: #fbf5f3;
-  }
-  .slider-btn {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  }
-  .arrow-img {
-    width: auto;
-    height: auto;
-  }
-  .left-btn:hover img {
-    content: url("../img/left-arrow2.png");
-  }
-  .right-btn:hover img {
-    content: url("../img/right-arrow2.png");
-  }
-  .random-btn {
-    display: inline-block;
-    padding: 0.75em 1em;
-    border-radius: 0.625rem;
-    font-weight: bold;
-    font-size: 0.875rem;
+  .btn-container {
+    gap: 5rem;
     margin-top: 1.5625rem;
   }
-  .mobile-nav {
-    display: none;
+  .random-btn {
+    font-size: 0.875rem;
   }
 }
 /* ************** End Media Queries Styles **************** */
