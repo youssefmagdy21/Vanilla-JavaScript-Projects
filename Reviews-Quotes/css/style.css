@@ -1,0 +1,365 @@
+/* ************** Google Fonts **************** */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Ubuntu:wght@700&display=swap");
+/* ************** End Google Fonts **************** */
+
+/* ************** CSS Reset **************** */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+::before,
+::after {
+  --tw-content: "";
+}
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+body {
+  margin: 0;
+  line-height: inherit;
+}
+hr {
+  height: 0;
+  color: inherit;
+  border-top-width: 1px;
+}
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  background-color: transparent;
+  background-image: none;
+}
+:-moz-focusring {
+  outline: auto;
+}
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+progress {
+  vertical-align: baseline;
+}
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+summary {
+  display: list-item;
+}
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+legend {
+  padding: 0;
+}
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+textarea {
+  resize: vertical;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  color: #9ca3af;
+}
+button,
+[role="button"] {
+  cursor: pointer;
+}
+:disabled {
+  cursor: default;
+}
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+/* ************** End CSS Reset **************** */
+
+/* ************** Main Styles **************** */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  background-color: #fbf5f3;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  color: #000411;
+  padding: 2rem;
+}
+.main-container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+.title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.content-container {
+  position: relative;
+  color: #fbf5f3;
+  background-color: #820933;
+  flex-direction: column;
+  border-radius: 0.625rem;
+  /* margin-bottom: 1.25rem; */
+  padding: 1rem;
+  margin-bottom: 4.875rem;
+  box-shadow: 0px 5px 15px rgba(0 0 0 / 0.2);
+}
+.quote-icon {
+  width: 55px;
+  margin-bottom: 0.625rem;
+}
+.review-text {
+  font-size: 0.95rem;
+  margin-bottom: 3.875rem;
+}
+.profile-pic-container {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  bottom: 0;
+  translate: 0 50%;
+  overflow: hidden;
+}
+.profile-pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.personal-info {
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+.btn {
+  display: none;
+}
+/* mobile nav buttons */
+.mobile-nav {
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.mobile-btn {
+  background-color: #fbf5f3;
+}
+.mobile-slider-btn {
+  width: 30px;
+  height: 30px;
+}
+.mobile-random-btn {
+  padding: 0.75em 1em;
+  border-radius: 0.625rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border: 1px solid #000411;
+  transition: background-color 0.3s, color 0.3s ease;
+}
+.mobile-random-btn:hover,
+.mobile-random-btn:active {
+  background-color: #000411;
+  color: #fbf5f3;
+}
+/* ************** End Main Styles **************** */
+
+/* ************** Start Media Queries Styles **************** */
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  body {
+    gap: 3.125rem;
+  }
+  .main-container {
+    width: 75%;
+    max-width: 40.625rem;
+  }
+  .content-container {
+    padding: 1.25rem 1.75rem;
+    margin-bottom: 6.25rem;
+  }
+  .quote-icon {
+    width: 4.0625rem;
+  }
+  .review-text {
+    font-size: 1.125rem;
+    margin-bottom: 4.6875rem;
+  }
+  .profile-pic-container {
+    width: 9.375rem;
+    height: 9.375rem;
+  }
+  .personal-info {
+    font-size: 1rem;
+  }
+  .quote-icon {
+    width: 4.0625rem;
+    margin-bottom: 1rem;
+  }
+  .btn {
+    background-color: #fbf5f3;
+    border: 1px solid #000411;
+    transition: background-color 0.3s, color 0.3s ease;
+  }
+  .btn:hover,
+  .btn:active {
+    background-color: #000411;
+    color: #fbf5f3;
+  }
+  .slider-btn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .arrow-img {
+    width: auto;
+    height: auto;
+  }
+  .left-btn:hover img {
+    content: url("../img/left-arrow2.png");
+  }
+  .right-btn:hover img {
+    content: url("../img/right-arrow2.png");
+  }
+  .random-btn {
+    display: inline-block;
+    padding: 0.75em 1em;
+    border-radius: 0.625rem;
+    font-weight: bold;
+    font-size: 0.875rem;
+    margin-top: 1.5625rem;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+/* ************** End Media Queries Styles **************** */

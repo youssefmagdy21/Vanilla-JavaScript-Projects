@@ -8,7 +8,7 @@ Here is the list of projects:-
 
 - [x] Color-Flipper
 - [x] Simple-Counter
-- [ ] Reviews/Quotes
+- [x] Reviews/Quotes
 - [ ] NavBar
 - [ ] SideBar
 - [ ] Modal
